@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" data-no-mirror>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css">
+        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+	    
+        <!-- Lunr search -->
+
+        
+
+        
+
+        <title>Documentation - CodeBuddy Code &#x5B9E;&#x6218;&#x6848;&#x4F8B;</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+    <a class="navbar-brand" href="/">
+                <span class="text-primary">Documentation</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+        <ul class="navbar-nav mr-auto">
+            
+        </ul>
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+            <a class="nav-link" href="/linux">&#x5168;&#x90E8;&#x7AE0;&#x8282;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/other">&#x8DA3;&#x5473;&#x9879;&#x76EE;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/exercises">&#x8BFE;&#x5802;&#x7EC3;&#x4E60;</a>
+        </li>
+
+            
+        </ul>
+    </div>
+</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Titlebar -->
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex flex-wrap align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
+
+        <span><a href="/other">&#x8DA3;&#x5473;&#x9879;&#x76EE;</a></span>
+                                        </div>
+                                        <div class="text-white m-0 text-break title">
+
+CodeBuddy Code &#x5B9E;&#x6218;&#x6848;&#x4F8B;
+                                        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Under title -->
+                    <div id="undertitle">
+                        <div class="container-xl">
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Body -->
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 p-md-0 m-md-0 bg-body">
+                                            <div id="left-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+
+<div class="sidebar-root">
+
+<div class="sidebar-nav-item">
+    <a href="/other">&#x8DA3;&#x5473;&#x9879;&#x76EE;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/other/chapter-02">CentOS&#x684C;&#x9762;&#x548C;&#x7EC8;&#x7AEF;&#x4F18;&#x5316;&#x914D;&#x7F6E;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/other/chapter-03">CodeBuddy Code &#x5B89;&#x88C5;&#x4E0E;&#x4F7F;&#x7528;</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/other/chapter-04">CodeBuddy Code &#x5B9E;&#x6218;&#x6848;&#x4F8B;</a>
+</div></div>                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+<h1 id="codebuddy-code-ai">CodeBuddy Code 实战案例 —— 体验 AI 编程助手的强大</h1>
+<hr />
+<blockquote>
+<p>本章通过多个完整案例，展示如何使用 CodeBuddy Code 快速生成可在本地运行的实用程序。
+每个案例都包含<strong>提示词（Prompt）<strong>和</strong>生成结果</strong>，帮助你体会&quot;一句话生成一个程序&quot;的开发体验。</p>
+</blockquote>
+<hr />
+<h2 id="section">📋 前置准备</h2>
+<p>确保已完成 CodeBuddy CLI 的安装和登录（详见 chapter-03），然后进入工作目录：</p>
+<pre><code class="language-bash">mkdir ~/codebuddy_demo
+cd ~/codebuddy_demo
+codebuddy
+</code></pre>
+<blockquote>
+<p>💡 <strong>提示</strong>：以下每个案例，你只需要把提示词复制粘贴给 CodeBuddy，它就会自动为你生成完整的代码文件。</p>
+</blockquote>
+<hr />
+<h2 id="python">案例一：科学计算器（Python）</h2>
+<h3 id="section-1">🎯 目标</h3>
+<p>生成一个带有图形界面的科学计算器，支持基本运算和常用数学函数。</p>
+<h3 id="section-2">💬 提示词</h3>
+<pre><code>帮我用 Python 的 tkinter 库写一个图形界面科学计算器。
+要求：
+1. 界面美观，按钮用网格布局
+2. 支持加减乘除、括号运算
+3. 支持 sin、cos、tan、log、sqrt、幂运算
+4. 有历史记录显示区域
+5. 支持键盘输入
+6. 代码保存为 calculator.py
+</code></pre>
+<h3 id="section-3">▶️ 运行方式</h3>
+<pre><code class="language-bash">python calculator.py
+</code></pre>
+<h3 id="section-4">📸 运行效果</h3>
+<p>运行后将弹出一个窗口计算器，你可以点击按钮或直接用键盘输入算式，按下 <code>=</code> 或回车即可得到结果。</p>
+<hr />
+<h2 id="python-1">案例二：打字速度测试（Python）</h2>
+<h3 id="section-5">🎯 目标</h3>
+<p>生成一个打字速度测试程序，实时统计 WPM（每分钟字数）和准确率。</p>
+<h3 id="section-6">💬 提示词</h3>
+<pre><code>帮我写一个 Python 打字速度测试程序，要求：
+1. 使用 curses 库实现终端界面
+2. 随机显示一段英文句子让用户打字
+3. 实时显示：当前速度（WPM）、准确率、剩余时间
+4. 用不同颜色高亮显示：已正确输入的部分（绿色）、错误部分（红色）、当前光标位置
+5. 测试时间 60 秒，结束后显示最终成绩和评级
+6. 支持多轮测试，按任意键开始下一轮
+7. 代码保存为 typing_test.py
+</code></pre>
+<h3 id="section-7">▶️ 运行方式</h3>
+<pre><code class="language-bash">python typing_test.py
+</code></pre>
+<h3 id="section-8">📸 运行效果</h3>
+<p>终端中会显示一段随机英文文本，你输入的内容会实时用颜色标注对错，顶部显示实时速度和准确率。</p>
+<hr />
+<h2 id="python-2">案例三：2048 数字游戏（Python）</h2>
+<h3 id="section-9">🎯 目标</h3>
+<p>生成经典的 2048 数字合并游戏，支持方向键操作。</p>
+<h3 id="section-10">💬 提示词</h3>
+<pre><code>帮我用 Python 写一个 2048 游戏，要求：
+1. 4x4 的网格，用字符界面显示（可以用彩色数字）
+2. 支持上下左右方向键操作
+3. 每次滑动后随机在空格生成 2 或 4
+4. 相同数字碰撞时合并并计分
+5. 实时显示当前分数和最高分
+6. 游戏结束时显示 Game Over 和最终得分
+7. 支持重新开始（按 R 键）
+8. 数字用不同颜色区分（2是白色，4是浅黄，8是橙色，16以上是红色）
+9. 代码保存为 game_2048.py
+</code></pre>
+<h3 id="section-11">▶️ 运行方式</h3>
+<pre><code class="language-bash">python game_2048.py
+</code></pre>
+<h3 id="section-12">📸 运行效果</h3>
+<p>终端中显示 4×4 彩色方格，使用方向键滑动数字，相同数字会合并，努力合成 2048 吧！</p>
+<hr />
+<h2 id="python-3">案例四：俄罗斯方块（Python）</h2>
+<h3 id="section-13">🎯 目标</h3>
+<p>生成经典俄罗斯方块游戏，支持方块旋转、计分和等级系统。</p>
+<h3 id="section-14">💬 提示词</h3>
+<pre><code>帮我用 Python 的 curses 库写一个俄罗斯方块游戏，要求：
+1. 标准 10x20 的游戏区域
+2. 7 种标准方块（I、O、T、S、Z、J、L），每种用不同颜色
+3. 支持操作：左移、右移、软降（加速下落）、硬降（直接落底）、旋转
+4. 消行计分：1行100分，2行300分，3行500分，4行800分
+5. 每消10行升级一级，下落速度加快
+6. 右侧显示：下一个方块预览、当前分数、当前等级、已消行数
+7. 游戏结束显示最终成绩
+8. 代码保存为 tetris.py
+</code></pre>
+<h3 id="section-15">▶️ 运行方式</h3>
+<pre><code class="language-bash">python tetris.py
+</code></pre>
+<h3 id="section-16">📸 运行效果</h3>
+<p>终端中呈现经典的俄罗斯方块界面，右侧有信息面板，使用方向键和空格键操控方块。</p>
+<hr />
+<h2 id="python-4">案例五：贪吃蛇（Python）</h2>
+<h3 id="section-17">🎯 目标</h3>
+<p>生成一个终端版贪吃蛇游戏，画面流畅，操作灵敏。</p>
+<h3 id="section-18">💬 提示词</h3>
+<pre><code>帮我用 Python 的 curses 库写一个贪吃蛇游戏，要求：
+1. 20x40 的游戏区域，用字符绘制边界
+2. 蛇身用 █ 字符，蛇头用不同颜色标识
+3. 食物随机出现，用 ★ 字符
+4. 支持 WASD 和方向键操控方向
+5. 吃到食物蛇身变长，速度略微加快
+6. 实时显示分数和当前速度等级
+7. 撞墙或撞到自己身体则游戏结束
+8. 游戏结束后显示最终分数，按 R 重新开始
+9. 代码保存为 snake.py
+</code></pre>
+<h3 id="section-19">▶️ 运行方式</h3>
+<pre><code class="language-bash">python snake.py
+</code></pre>
+<h3 id="section-20">📸 运行效果</h3>
+<p>终端中出现一条不断移动的蛇，吃掉食物后变长，速度逐渐加快，考验你的反应速度！</p>
+<hr />
+<h2 id="aipython">案例六：井字棋 AI（Python）</h2>
+<h3 id="section-21">🎯 目标</h3>
+<p>生成一个带 AI 对手的井字棋游戏，AI 使用 Minimax 算法实现不败。</p>
+<h3 id="section-22">💬 提示词</h3>
+<pre><code>帮我写一个 Python 井字棋游戏，要求：
+1. 3x3 的棋盘，用字符界面显示
+2. 玩家使用 X，AI 使用 O
+3. AI 使用 Minimax 算法，永远不会输
+4. 玩家先手，轮流落子
+5. 每步显示棋盘状态，标出当前位置
+6. 胜负平局都有明确提示
+7. 支持按 R 重新开始
+8. 显示每步 AI 的思考过程（可选）
+9. 代码保存为 tic_tac_toe.py
+</code></pre>
+<h3 id="section-23">▶️ 运行方式</h3>
+<pre><code class="language-bash">python tic_tac_toe.py
+</code></pre>
+<h3 id="section-24">📸 运行效果</h3>
+<p>终端中显示井字棋棋盘，你和 AI 轮流对弈。AI 采用了最优策略，你能逼平它吗？</p>
+<hr />
+<h2 id="python-5">案例七：个人记账本（Python）</h2>
+<h3 id="section-25">🎯 目标</h3>
+<p>生成一个基于终端的个人记账程序，支持数据持久化存储。</p>
+<h3 id="section-26">💬 提示词</h3>
+<pre><code>帮我写一个 Python 终端个人记账本程序，要求：
+1. 数据保存到 CSV 文件（ledger.csv）
+2. 功能菜单：添加记录、查看所有记录、按日期筛选、按类别筛选、收支统计、删除记录
+3. 每条记录包含：日期、类型（收入/支出）、类别（餐饮/交通/娱乐/工资/其他）、金额、备注
+4. 支持统计功能：本月总收入、总支出、结余，按类别汇总
+5. 界面用表格形式展示数据，对齐美观
+6. 支持导出为文本报表
+7. 输入验证：金额必须是数字，日期格式为 YYYY-MM-DD
+8. 代码保存为 ledger.py
+</code></pre>
+<h3 id="section-27">▶️ 运行方式</h3>
+<pre><code class="language-bash">python ledger.py
+</code></pre>
+<h3 id="section-28">📸 运行效果</h3>
+<p>运行后进入菜单界面，你可以添加收支记录、查看统计报表，所有数据自动保存到 CSV 文件中，下次打开数据还在。</p>
+<hr />
+<h2 id="python-6">案例八：像素画板（Python）</h2>
+<h3 id="section-29">🎯 目标</h3>
+<p>生成一个基于终端的像素画绘制工具。</p>
+<h3 id="section-30">💬 提示词</h3>
+<pre><code>帮我用 Python 写一个终端像素画板程序，要求：
+1. 20x20 的画布，用方块字符显示
+2. 8 种颜色可选（用数字 1-8 选择颜色）
+3. 操作方式：方向键移动光标，数字键选择颜色，空格键填色，B 键擦除
+4. 实时显示当前光标位置和选中颜色
+5. 支持保存画作到文件（保存为文本格式）和加载已有画作
+6. 支持清空画布（按 C 键）
+7. 底部显示操作提示栏
+8. 代码保存为 pixel_art.py
+</code></pre>
+<h3 id="section-31">▶️ 运行方式</h3>
+<pre><code class="language-bash">python pixel_art.py
+</code></pre>
+<h3 id="section-32">📸 运行效果</h3>
+<p>终端中出现一个彩色画布，你可以用方向键移动光标，选择不同颜色进行绘制，创作属于你的像素艺术。</p>
+<hr />
+<h2 id="section-33">🧠 总结与思考</h2>
+<p>通过以上案例，你应该已经体会到 CodeBuddy Code 的强大之处：</p>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>体现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>快速原型开发</strong></td>
+<td>一句话就能生成完整可运行的程序</td>
+</tr>
+<tr>
+<td><strong>多领域覆盖</strong></td>
+<td>游戏、工具、AI 算法，样样精通</td>
+</tr>
+<tr>
+<td><strong>代码质量高</strong></td>
+<td>生成的代码结构清晰、注释完善</td>
+</tr>
+<tr>
+<td><strong>交互设计能力</strong></td>
+<td>自动生成美观的用户界面和交互逻辑</td>
+</tr>
+<tr>
+<td><strong>持续迭代</strong></td>
+<td>可以在生成结果的基础上继续提问优化</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-34">🚀 进阶挑战</h3>
+<p>尝试用以下提示词让 CodeBuddy 帮你生成更复杂的程序：</p>
+<ol>
+<li><strong>五子棋对战</strong>：<code>帮我写一个支持双人对战的五子棋游戏，用 Python 实现，有悔棋功能</code></li>
+<li><strong>Markdown 编辑器</strong>：<code>帮我用 Python 写一个实时预览的 Markdown 编辑器，左边编辑右边预览</code></li>
+<li><strong>文件批量重命名工具</strong>：<code>帮我写一个文件批量重命名工具，支持正则替换、添加序号、修改扩展名</code></li>
+<li><strong>天气查询应用</strong>：<code>帮我写一个终端天气查询程序，输入城市名显示未来3天天气预报</code></li>
+</ol>
+<blockquote>
+<p>💡 <strong>记住</strong>：CodeBuddy Code 是你的编程助手，而不是替代你思考的工具。
+理解代码的逻辑比生成代码本身更重要。建议在 CodeBuddy 生成代码后，花时间阅读和理解每一部分！</p>
+</blockquote>
+<hr />
+
+
+                                        </div>
+                                <div class="col-lg-2 p-md-0 m-md-0 bg-body">
+                                    <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
+        <div class=" mb-3 sidebar-root">
+            <div class="sidebar-nav-item sidebar-header">On This Page</div>
+            <div class="sidebar-nav-children">
+                    <div class="sidebar-nav-item"><a href="#codebuddy-code-ai">CodeBuddy Code &#x5B9E;&#x6218;&#x6848;&#x4F8B; &#x2014;&#x2014; &#x4F53;&#x9A8C; AI &#x7F16;&#x7A0B;&#x52A9;&#x624B;&#x7684;&#x5F3A;&#x5927;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section">&#x1F4CB; &#x524D;&#x7F6E;&#x51C6;&#x5907;</a></div>
+                                <div class="sidebar-nav-item"><a href="#python">&#x6848;&#x4F8B;&#x4E00;&#xFF1A;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x5668;&#xFF08;Python&#xFF09;</a></div>
+                                <div class="sidebar-nav-item"><a href="#python-1">&#x6848;&#x4F8B;&#x4E8C;&#xFF1A;&#x6253;&#x5B57;&#x901F;&#x5EA6;&#x6D4B;&#x8BD5;&#xFF08;Python&#xFF09;</a></div>
+                                <div class="sidebar-nav-item"><a href="#python-2">&#x6848;&#x4F8B;&#x4E09;&#xFF1A;2048 &#x6570;&#x5B57;&#x6E38;&#x620F;&#xFF08;Python&#xFF09;</a></div>
+                                <div class="sidebar-nav-item"><a href="#python-3">&#x6848;&#x4F8B;&#x56DB;&#xFF1A;&#x4FC4;&#x7F57;&#x65AF;&#x65B9;&#x5757;&#xFF08;Python&#xFF09;</a></div>
+                                <div class="sidebar-nav-item"><a href="#python-4">&#x6848;&#x4F8B;&#x4E94;&#xFF1A;&#x8D2A;&#x5403;&#x86C7;&#xFF08;Python&#xFF09;</a></div>
+                                <div class="sidebar-nav-item"><a href="#aipython">&#x6848;&#x4F8B;&#x516D;&#xFF1A;&#x4E95;&#x5B57;&#x68CB; AI&#xFF08;Python&#xFF09;</a></div>
+                                <div class="sidebar-nav-item"><a href="#python-5">&#x6848;&#x4F8B;&#x4E03;&#xFF1A;&#x4E2A;&#x4EBA;&#x8BB0;&#x8D26;&#x672C;&#xFF08;Python&#xFF09;</a></div>
+                                <div class="sidebar-nav-item"><a href="#python-6">&#x6848;&#x4F8B;&#x516B;&#xFF1A;&#x50CF;&#x7D20;&#x753B;&#x677F;&#xFF08;Python&#xFF09;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-33">&#x1F9E0; &#x603B;&#x7ED3;&#x4E0E;&#x601D;&#x8003;</a></div>
+                        </div>
+            </div>
+        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+    <div class="offset-lg-2 col-12 col-lg-8">
+        <div class="pt-2 font-size-sm text-muted text-center">
+            Generated By <a class="text-muted" href="https://statiq.dev">Statiq</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+
+                // Bootstrap tooltips
+                $('[data-toggle="tooltip"]').tooltip();
+
+				// Keeps the sidebars in view on wider viewports
+				let left = null;
+				let leftParent = null;
+				let right = null;
+				let rightParent = null;
+                function stickSidebars()
+				{
+				    if (left == null) {
+                        left = $('#left-sidebar');
+                        right = $('#right-sidebar');
+                    }
+                    if (left.length) {
+                        if (window.innerWidth >= 768) {
+                            if (leftParent == null) {
+                                leftParent = left.parent()[0];
+                            }
+                            if (leftParent) {
+                                let leftRect = leftParent.getBoundingClientRect();
+                                stickSidebar(left,  leftRect);
+                            }
+                        } else {
+                            left.css('position', 'relative');
+                            if (left.css('bottom') != 0) {
+                                left.css('bottom', '0');
+                            }
+                        }
+                    }
+                    if (right.length) {
+                        if (window.innerWidth >= 768) {
+                            if (rightParent == null) {
+                                rightParent = right.parent()[0];
+                            }
+                            if (rightParent) {
+                                let rightRect = rightParent.getBoundingClientRect();
+                                stickSidebar(right,  rightRect);
+                            }
+                        } else {
+                            right.css('position', 'relative');
+                            if (right.css('bottom') != 0) {
+                                right.css('bottom', '0');
+                            }
+                        }
+                    }
+				}
+				function stickSidebar(sidebar, rect) {
+                    // Bottom
+                    if (rect.bottom > window.innerHeight) {
+                        sidebar.css('bottom', rect.bottom - window.innerHeight + "px");
+                    } else {
+                        sidebar.css('bottom', 0);
+                    }
+                    // Top
+                    if (rect.top < 0) {
+                        sidebar.css('position', 'sticky');
+                    } else {
+                        sidebar.css('position', 'absolute');
+                    }
+				}
+				$(window).on("load", function() {
+				    stickSidebars();
+				});
+                $(window).scroll(function() {
+				    stickSidebars();
+				});
+				$(window).resize(function() {
+				    stickSidebars();
+				})
+
+                // Mermaid diagrams
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+
+        
+
+        
+    </body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" data-no-mirror>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css">
+        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+	    
+        <!-- Lunr search -->
+
+        
+
+        
+
+        <title>Documentation - SSH&#x8FDC;&#x7A0B;&#x5F00;&#x53D1;</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+    <a class="navbar-brand" href="/">
+                <span class="text-primary">Documentation</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+        <ul class="navbar-nav mr-auto">
+            
+        </ul>
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+            <a class="nav-link" href="/linux">&#x5168;&#x90E8;&#x7AE0;&#x8282;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/other">&#x8DA3;&#x5473;&#x9879;&#x76EE;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/exercises">&#x8BFE;&#x5802;&#x7EC3;&#x4E60;</a>
+        </li>
+
+            
+        </ul>
+    </div>
+</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Titlebar -->
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex flex-wrap align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
+
+        <span><a href="/linux">&#x7AE0;&#x8282;&#x5BFC;&#x822A;</a></span>
+                                        </div>
+                                        <div class="text-white m-0 text-break title">
+
+SSH&#x8FDC;&#x7A0B;&#x5F00;&#x53D1;
+                                        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Under title -->
+                    <div id="undertitle">
+                        <div class="container-xl">
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Body -->
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 p-md-0 m-md-0 bg-body">
+                                            <div id="left-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+
+<div class="sidebar-root">
+
+<div class="sidebar-nav-item">
+    <a href="/linux">&#x7AE0;&#x8282;&#x5BFC;&#x822A;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-01">Linux&#x754C;&#x9762;&#x3001;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x548C;&#x57FA;&#x672C;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-02">WSL&#x4E0B;Ubuntu&#x7684;&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-03">vim&#x7F16;&#x8F91;&#x5668;&#x7684;&#x4F7F;&#x7528;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-04">Linux&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-05">Linux&#x7528;&#x6237;&#x548C;&#x6743;&#x9650;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-06">Linux&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-07">Shell&#x57FA;&#x7840;&#x77E5;&#x8BC6;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-08">Linux&#x7CFB;&#x7EDF;&#x76D1;&#x63A7;&#x548C;&#x6027;&#x80FD;&#x4F18;&#x5316;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-09">Linux&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-10">Linux&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x548C;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-11">Linux&#x78C1;&#x76D8;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-12">Shell&#x7F16;&#x7A0B;</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/linux/chapter-13">SSH&#x8FDC;&#x7A0B;&#x5F00;&#x53D1;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-14">&#x547D;&#x4EE4;&#x884C;AI Agent&#x5F00;&#x53D1;&#x5DE5;&#x5177;</a>
+</div></div>                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+<h1 id="ssh">SSH远程开发</h1>
+<h1 id="section">1. 基本介绍</h1>
+<p>SSH（Secure Shell）是一种用于在不安全网络上安全地访问远程主机的协议。它可以对数据进行加密，提供远程登录、文件传输和命令执行等功能，是Linux系统管理和远程开发的基础工具。</p>
+<h1 id="section-1">2. 环境准备</h1>
+<h2 id="vmware">VMware虚拟机配置</h2>
+<p>在VMware中设置桥接模式：</p>
+<ul>
+<li>在VMWare Workstation软件中，顶部菜单栏找到&quot;编辑&quot;-&gt;&quot;虚拟网络编辑器&quot;，在弹出的窗口中点击&quot;添加网络&quot;，选择VMNet0，点击&quot;确定&quot;完成添加。</li>
+<li>在&quot;虚拟网络编辑器&quot;窗口中，选择刚才添加的网络VMNet0，将&quot;连接类型&quot;设置为&quot;桥接模式&quot;，点击&quot;确定&quot;保存设置.</li>
+<li>桥接至物理网络适配器：不要用默认的&quot;自动&quot;！请选择你当前使用的物理网络适配器（例如以太网适配器或无线适配器），点击&quot;确定&quot;保存设置。</li>
+<li>在VMWare Workstation软件中，顶部菜单栏找到&quot;虚拟机&quot;-&gt;&quot;设置&quot;，将&quot;网络适配器&quot;的&quot;网络连接&quot;设置为&quot;桥接模式&quot;。</li>
+</ul>
+<p>CentOS以桥接模式连接网络，获得与主机同网段的IP地址，方便SSH连接和远程开发。桥接模式下，虚拟机直接连接到物理网络，相当于网络中的一台独立主机。</p>
+<div class="mermaid">graph LR
+    A["Windows主机: 192.168.1.10"] &lt;-- 桥接 --> B["VMware 虚拟交换机"] &lt;-- 桥接 --> C["CentOS 8: 192.168.1.20"]
+    B --- D["路由器: 192.168.1.1"]
+</div>
+<h3 id="ip">查看虚拟机IP地址</h3>
+<pre><code class="language-bash"># 查看IP地址
+ip addr show
+
+# 测试网络连通性
+ping baidu.com          # 外网
+</code></pre>
+<p>如果CentOS右上角找不到网络连接的图标，可以尝试以下命令重启网络服务：</p>
+<pre><code class="language-bash"># 重启网络服务
+systemctl restart NetworkManager
+</code></pre>
+<h1 id="vs-code-remote-ssh">3. VS Code Remote-SSH安装与配置</h1>
+<p>在Windows主机上可以使用多种方式，连接虚拟机。
+包括使用PuTTY等SSH客户端工具，或者直接在CMD/PowerShell中使用SSH命令行工具进行连接。</p>
+<p>使用VS Code的Remote-SSH扩展，也可以直接在远程CentOS服务器上进行开发。</p>
+<h2 id="remote-ssh">安装Remote-SSH扩展</h2>
+<ol>
+<li>打开VS Code</li>
+<li>点击左侧活动栏的<strong>扩展图标</strong>（或按 <code>Ctrl+Shift+X</code>）</li>
+<li>在搜索框中输入 &quot;Remote - SSH&quot;</li>
+<li>找到由Microsoft发布的 <strong>Remote - SSH</strong> 扩展</li>
+<li>点击<strong>安装</strong></li>
+</ol>
+<p>安装完成后，VS Code左下角会出现一个远程连接图标（&gt;&lt;），表示Remote-SSH扩展已就绪。</p>
+<h2 id="ssh-1">配置SSH连接</h2>
+<p>有两种方式可以配置SSH连接：</p>
+<h3 id="section-2">方式一：通过命令面板配置</h3>
+<ol>
+<li>按 <code>Ctrl+Shift+P</code> 打开命令面板</li>
+<li>输入 <strong>Remote-SSH: Connect to Host...</strong></li>
+<li>选择 <strong>Add New SSH Host...</strong></li>
+<li>输入SSH连接命令：
+<pre><code>ssh lenovo&#64;192.168.1.20
+</code></pre>
+</li>
+<li>选择SSH配置文件保存位置（通常选择默认的 <code>C:\Users\用户名\.ssh\config</code>）</li>
+<li>连接成功后，左下角会显示 <strong>SSH: centos8-vm</strong></li>
+</ol>
+<h3 id="ssh-2">方式二：直接编辑SSH配置文件</h3>
+<p>也可以手动编辑SSH配置文件 <code>C:\Users\用户名\.ssh\config</code>：</p>
+<pre><code>Host centos8-vm
+    HostName 192.168.1.20
+    User lenovo
+    Port 22
+</code></pre>
+<p>配置完成后即可直接选择该主机进行连接。</p>
+<h2 id="section-3">连接远程服务器</h2>
+<ol>
+<li>点击左侧活动栏的<strong>远程连接图标</strong>（&gt;&lt;）</li>
+<li>在 <strong>SSH Targets</strong> 中可以看到配置的主机</li>
+<li>点击主机旁边的<strong>连接图标</strong>（或右键选择 <strong>Connect to Host in New Window</strong>）</li>
+<li>在弹出的对话框中选择平台：<strong>Linux</strong></li>
+<li>等待VS Code在远程服务器安装VS Code Server</li>
+<li>连接成功后，左下角会显示 <strong>SSH: centos8-vm</strong></li>
+</ol>
+<p>首次连接时，VS Code会自动在远程服务器上下载并安装VS Code Server，这是VS Code远程开发的核心组件。</p>
+<h1 id="section-4">4. 远程开发使用</h1>
+<h2 id="section-5">打开远程文件夹</h2>
+<ol>
+<li>连接成功后，点击 <strong>文件 → 打开文件夹</strong></li>
+<li>选择要打开的远程目录（如 <code>/home/lenovo/projects</code>）</li>
+<li>点击 <strong>确定</strong>，VS Code会在远程目录下创建 <code>.vscode</code> 配置</li>
+</ol>
+<h2 id="section-6">远程终端</h2>
+<pre><code class="language-bash"># 连接成功后，按 Ctrl+` 打开远程终端
+# 终端运行在远程服务器上，可以执行任何Linux命令
+
+# 查看当前工作目录
+pwd
+
+# 查看文件列表
+ls -la
+
+# 运行Python脚本
+python3 script.py
+
+# 编译C程序
+gcc main.c -o main &amp;&amp; ./main
+</code></pre>
+<h2 id="section-7">文件传输</h2>
+<p>VS Code Remote-SSH支持直接在本地和远程之间传输文件：</p>
+<ul>
+<li><strong>上传文件</strong>：在资源管理器中拖拽文件到远程文件夹</li>
+<li><strong>下载文件</strong>：右键远程文件 → <strong>Download...</strong></li>
+<li><strong>复制粘贴</strong>：使用快捷键在本地和远程之间复制文件内容</li>
+</ul>
+<p>也可以使用命令行传输文件：</p>
+<pre><code class="language-powershell"># 使用scp上传文件（在本地PowerShell中执行）
+scp local_file.txt lenovo&#64;192.168.1.20:/home/lenovo/
+
+# 使用scp下载文件
+scp lenovo&#64;192.168.1.20:/home/lenovo/remote_file.txt ./
+
+# 上传整个目录
+scp -r local_folder/ lenovo&#64;192.168.1.20:/home/lenovo/
+
+# 使用rsync同步目录（更高效）
+rsync -avz local_folder/ lenovo&#64;192.168.1.20:/home/lenovo/remote_folder/
+</code></pre>
+<h1 id="vs-code">5. VS Code常用快捷键</h1>
+<h2 id="section-8">通用快捷键</h2>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl+Shift+P</code></td>
+<td>打开命令面板</td>
+</tr>
+<tr>
+<td><code>Ctrl+P</code></td>
+<td>快速打开文件</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+N</code></td>
+<td>新建窗口</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+M</code></td>
+<td>打开问题面板</td>
+</tr>
+<tr>
+<td><code>Ctrl+`` </code> ``</td>
+<td>打开终端</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+X</code></td>
+<td>打开扩展市场</td>
+</tr>
+</tbody>
+</table>
+<h2 id="remote-ssh-1">Remote-SSH专用快捷键</h2>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl+Shift+P</code> → <code>Remote-SSH: Connect</code></td>
+<td>连接远程主机</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+P</code> → <code>Remote-SSH: Close Connection</code></td>
+<td>关闭远程连接</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+P</code> → <code>Remote-SSH: Forward a Port</code></td>
+<td>端口转发</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+P</code> → <code>Remote-SSH: Show Log</code></td>
+<td>查看连接日志</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-9">编辑器快捷键</h2>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl+D</code></td>
+<td>选择下一个相同的词</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+K</code></td>
+<td>删除当前行</td>
+</tr>
+<tr>
+<td><code>Alt+Up/Down</code></td>
+<td>移动当前行</td>
+</tr>
+<tr>
+<td><code>Shift+Alt+Up/Down</code></td>
+<td>复制当前行</td>
+</tr>
+<tr>
+<td><code>Ctrl+/</code></td>
+<td>注释/取消注释</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+F</code></td>
+<td>全局搜索</td>
+</tr>
+</tbody>
+</table>
+<p>通过本章学习，你应该能够：</p>
+<ol>
+<li>理解VMware桥接网络模式的原理和配置方法</li>
+<li>掌握CentOS 8上SSH服务的安装、配置和管理</li>
+<li>熟练使用VS Code Remote-SSH进行远程开发</li>
+</ol>
+
+
+                                        </div>
+                                <div class="col-lg-2 p-md-0 m-md-0 bg-body">
+                                    <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
+        <div class=" mb-3 sidebar-root">
+            <div class="sidebar-nav-item sidebar-header">On This Page</div>
+            <div class="sidebar-nav-children">
+                    <div class="sidebar-nav-item"><a href="#ssh">SSH&#x8FDC;&#x7A0B;&#x5F00;&#x53D1;</a></div>
+                    <div class="sidebar-nav-item"><a href="#section">1. &#x57FA;&#x672C;&#x4ECB;&#x7ECD;</a></div>
+                    <div class="sidebar-nav-item"><a href="#section-1">2. &#x73AF;&#x5883;&#x51C6;&#x5907;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#vmware">VMware&#x865A;&#x62DF;&#x673A;&#x914D;&#x7F6E;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#vs-code-remote-ssh">3. VS Code Remote-SSH&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#remote-ssh">&#x5B89;&#x88C5;Remote-SSH&#x6269;&#x5C55;</a></div>
+                                <div class="sidebar-nav-item"><a href="#ssh-1">&#x914D;&#x7F6E;SSH&#x8FDE;&#x63A5;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-3">&#x8FDE;&#x63A5;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-4">4. &#x8FDC;&#x7A0B;&#x5F00;&#x53D1;&#x4F7F;&#x7528;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-5">&#x6253;&#x5F00;&#x8FDC;&#x7A0B;&#x6587;&#x4EF6;&#x5939;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-6">&#x8FDC;&#x7A0B;&#x7EC8;&#x7AEF;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-7">&#x6587;&#x4EF6;&#x4F20;&#x8F93;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#vs-code">5. VS Code&#x5E38;&#x7528;&#x5FEB;&#x6377;&#x952E;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-8">&#x901A;&#x7528;&#x5FEB;&#x6377;&#x952E;</a></div>
+                                <div class="sidebar-nav-item"><a href="#remote-ssh-1">Remote-SSH&#x4E13;&#x7528;&#x5FEB;&#x6377;&#x952E;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-9">&#x7F16;&#x8F91;&#x5668;&#x5FEB;&#x6377;&#x952E;</a></div>
+                        </div>
+            </div>
+        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+    <div class="offset-lg-2 col-12 col-lg-8">
+        <div class="pt-2 font-size-sm text-muted text-center">
+            Generated By <a class="text-muted" href="https://statiq.dev">Statiq</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+
+                // Bootstrap tooltips
+                $('[data-toggle="tooltip"]').tooltip();
+
+				// Keeps the sidebars in view on wider viewports
+				let left = null;
+				let leftParent = null;
+				let right = null;
+				let rightParent = null;
+                function stickSidebars()
+				{
+				    if (left == null) {
+                        left = $('#left-sidebar');
+                        right = $('#right-sidebar');
+                    }
+                    if (left.length) {
+                        if (window.innerWidth >= 768) {
+                            if (leftParent == null) {
+                                leftParent = left.parent()[0];
+                            }
+                            if (leftParent) {
+                                let leftRect = leftParent.getBoundingClientRect();
+                                stickSidebar(left,  leftRect);
+                            }
+                        } else {
+                            left.css('position', 'relative');
+                            if (left.css('bottom') != 0) {
+                                left.css('bottom', '0');
+                            }
+                        }
+                    }
+                    if (right.length) {
+                        if (window.innerWidth >= 768) {
+                            if (rightParent == null) {
+                                rightParent = right.parent()[0];
+                            }
+                            if (rightParent) {
+                                let rightRect = rightParent.getBoundingClientRect();
+                                stickSidebar(right,  rightRect);
+                            }
+                        } else {
+                            right.css('position', 'relative');
+                            if (right.css('bottom') != 0) {
+                                right.css('bottom', '0');
+                            }
+                        }
+                    }
+				}
+				function stickSidebar(sidebar, rect) {
+                    // Bottom
+                    if (rect.bottom > window.innerHeight) {
+                        sidebar.css('bottom', rect.bottom - window.innerHeight + "px");
+                    } else {
+                        sidebar.css('bottom', 0);
+                    }
+                    // Top
+                    if (rect.top < 0) {
+                        sidebar.css('position', 'sticky');
+                    } else {
+                        sidebar.css('position', 'absolute');
+                    }
+				}
+				$(window).on("load", function() {
+				    stickSidebars();
+				});
+                $(window).scroll(function() {
+				    stickSidebars();
+				});
+				$(window).resize(function() {
+				    stickSidebars();
+				})
+
+                // Mermaid diagrams
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+
+        
+
+        
+    </body>
+</html>

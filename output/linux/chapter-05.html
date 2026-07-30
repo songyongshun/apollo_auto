@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" data-no-mirror>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css">
+        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+	    
+        <!-- Lunr search -->
+
+        
+
+        
+
+        <title>Documentation - Linux&#x7528;&#x6237;&#x548C;&#x6743;&#x9650;&#x7BA1;&#x7406;</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+    <a class="navbar-brand" href="/">
+                <span class="text-primary">Documentation</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+        <ul class="navbar-nav mr-auto">
+            
+        </ul>
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+            <a class="nav-link" href="/linux">&#x5168;&#x90E8;&#x7AE0;&#x8282;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/other">&#x8DA3;&#x5473;&#x9879;&#x76EE;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/exercises">&#x8BFE;&#x5802;&#x7EC3;&#x4E60;</a>
+        </li>
+
+            
+        </ul>
+    </div>
+</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Titlebar -->
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex flex-wrap align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
+
+        <span><a href="/linux">&#x7AE0;&#x8282;&#x5BFC;&#x822A;</a></span>
+                                        </div>
+                                        <div class="text-white m-0 text-break title">
+
+Linux&#x7528;&#x6237;&#x548C;&#x6743;&#x9650;&#x7BA1;&#x7406;
+                                        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Under title -->
+                    <div id="undertitle">
+                        <div class="container-xl">
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Body -->
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 p-md-0 m-md-0 bg-body">
+                                            <div id="left-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+
+<div class="sidebar-root">
+
+<div class="sidebar-nav-item">
+    <a href="/linux">&#x7AE0;&#x8282;&#x5BFC;&#x822A;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-01">Linux&#x754C;&#x9762;&#x3001;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x548C;&#x57FA;&#x672C;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-02">WSL&#x4E0B;Ubuntu&#x7684;&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-03">vim&#x7F16;&#x8F91;&#x5668;&#x7684;&#x4F7F;&#x7528;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-04">Linux&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/linux/chapter-05">Linux&#x7528;&#x6237;&#x548C;&#x6743;&#x9650;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-06">Linux&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-07">Shell&#x57FA;&#x7840;&#x77E5;&#x8BC6;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-08">Linux&#x7CFB;&#x7EDF;&#x76D1;&#x63A7;&#x548C;&#x6027;&#x80FD;&#x4F18;&#x5316;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-09">Linux&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-10">Linux&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x548C;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-11">Linux&#x78C1;&#x76D8;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-12">Shell&#x7F16;&#x7A0B;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-13">SSH&#x8FDC;&#x7A0B;&#x5F00;&#x53D1;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-14">&#x547D;&#x4EE4;&#x884C;AI Agent&#x5F00;&#x53D1;&#x5DE5;&#x5177;</a>
+</div></div>                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+<h1 id="linux">Linux用户和权限管理</h1>
+<h1 id="section">1. 用户账户基础概念</h1>
+<h2 id="section-1">什么是用户账户</h2>
+<ul>
+<li><strong>用户账户</strong>：Linux系统中用于标识和管理用户身份的机制</li>
+<li><strong>作用</strong>：控制用户对系统资源的访问权限</li>
+<li><strong>类型</strong>：超级用户（root）、普通用户、系统用户</li>
+</ul>
+<h2 id="iduididgid">用户ID（UID）和组ID（GID）</h2>
+<ul>
+<li><strong>UID</strong>：用户标识符，唯一标识系统中的每个用户</li>
+<li><strong>GID</strong>：组标识符，唯一标识系统中的每个用户组</li>
+<li><strong>特殊UID</strong>：
+<ul>
+<li>0：root用户</li>
+<li>1-999：系统用户</li>
+<li>1000+：普通用户</li>
+</ul>
+</li>
+</ul>
+<h1 id="section-2">2. 用户管理命令</h1>
+<h2 id="section-3">查看用户信息</h2>
+<pre><code class="language-bash"># 查看当前登录用户
+whoami
+
+# 查看所有登录用户
+who
+
+# 查看系统中所有用户
+cat /etc/passwd
+
+# 查看特定用户信息
+id username
+</code></pre>
+<h2 id="section-4">添加用户</h2>
+<pre><code class="language-bash"># 添加新用户（默认会创建主目录）
+sudo useradd username
+
+# 添加用户但不创建主目录
+sudo useradd -M username
+
+# 添加用户并设置用户ID（在组建集群时可能需要）
+sudo useradd -u 1001 username
+</code></pre>
+<h2 id="section-5">切换用户</h2>
+<pre><code class="language-bash"># 切换到另一个用户
+su username
+# 切换到root用户
+su
+</code></pre>
+<p>注意，使用su命令切换用户时，如果目标用户没有设置密码，可能会提示“Authentication failure”。
+因此，建议为所有用户设置密码，以确保可以正常切换用户.
+但在root用户的情况下，是可以直接使用su命令切换到任意用户的。</p>
+<h2 id="section-6">设置用户密码</h2>
+<pre><code class="language-bash"># 为用户设置密码
+sudo passwd username
+
+# 锁定用户账户
+sudo passwd -l username
+
+# 解锁用户账户
+sudo passwd -u username
+</code></pre>
+<h2 id="section-7">修改用户信息</h2>
+<pre><code class="language-bash"># 修改用户主目录（有时用户目录在单独一块磁盘分区时需要修改）
+sudo usermod -d /data1/home/newname username
+
+# 修改用户shell
+sudo usermod -s /bin/zsh username
+
+# 将用户添加到组
+sudo usermod -a -G groupname username
+</code></pre>
+<h2 id="section-8">删除用户</h2>
+<pre><code class="language-bash"># 删除用户但保留主目录
+sudo userdel username
+
+# 删除用户及其主目录
+sudo userdel -r username
+</code></pre>
+<h1 id="section-9">3. 用户组管理</h1>
+<h2 id="section-10">查看组信息</h2>
+<pre><code class="language-bash"># 查看所有用户组
+cat /etc/group
+
+# 查看当前用户所属的组
+groups
+
+# 查看特定用户所属的组
+groups username
+
+# 查看特定组的成员
+getent group groupname
+</code></pre>
+<h2 id="section-11">创建和管理组</h2>
+<pre><code class="language-bash"># 创建新组
+sudo groupadd groupname
+
+# 创建组并指定GID
+sudo groupadd -g 1001 groupname
+
+# 查看组ID(GID，没有新的命令，而是对id命令添加选项来查看用户所属的组ID，参数为用户名，代表查看指定用户所属的组ID。若无参数，代表查看当前用户所属的组ID)
+id -g username
+
+# 修改组名
+sudo groupmod -n newname oldname
+
+# 删除组
+sudo groupdel groupname
+</code></pre>
+<h2 id="section-12">管理组成员</h2>
+<pre><code class="language-bash"># 将用户添加到组
+sudo gpasswd -a username groupname
+
+# 从组中删除用户
+sudo gpasswd -d username groupname
+</code></pre>
+<h2 id="vs">初始组 vs. 附加组</h2>
+<ul>
+<li>初始组 (Primary Group)：
+用户创建时指定的组（GID 记录在 /etc/passwd 中）。
+在 /etc/group 文件里，初始组成员的名字通常是空着的，因为系统认为既然这是你的主组，就不必再重复记录一遍。</li>
+<li>附加组 (Secondary Group)：
+当你执行 gpasswd -a user2 user2 时，你实际上是把 user2 显式地作为附加成员加入到了 user2 组中。
+结果：getent group 命令主要读取 /etc/group。只有当你手动添加（即使是加回同名组）后，该组的成员列表里才会出现 user2 这个名字，命令才会返回结果。</li>
+</ul>
+<h1 id="section-13">4. 文件权限基础</h1>
+<h2 id="section-14">权限类型</h2>
+<ul>
+<li><strong>读权限（r）</strong>：4 - 可以读取文件内容或列出目录内容</li>
+<li><strong>写权限（w）</strong>：2 - 可以修改文件内容或在目录中创建/删除文件</li>
+<li><strong>执行权限（x）</strong>：1 - 可以执行文件或进入目录</li>
+</ul>
+<h2 id="section-15">权限表示方法</h2>
+<p>ls -l命令输出的信息中，第一列显示了文件类型和权限信息。权限信息由10个字符组成，分别表示文件类型和所有者、组用户、其他用户的权限。</p>
+<ul>
+<li>第一个字符表示文件类型：
+<ul>
+<li><code>-</code>：普通文件</li>
+<li><code>d</code>：目录</li>
+<li><code>l</code>：符号链接</li>
+<li><code>c</code>：字符设备文件</li>
+<li><code>b</code>：块设备文件</li>
+</ul>
+</li>
+<li>接下来的9个字符分为三组，每组三个字符，分别表示所有者、组用户和其他用户的权限：
+<ul>
+<li><code>r</code>：读权限</li>
+<li><code>w</code>：写权限</li>
+<li><code>x</code>：执行权限</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-bash"># 符号表示法
+   -rw-r--r--  1 user group size date time filename
+#  | | | | |
+#  | | | | +-- 其他用户权限
+#  | | +------ 组用户权限
+#  | +-------- 所有者权限
+#  +---------- 文件类型
+</code></pre>
+<p>还有另一种表示方法是数字表示法，每个权限位对应一个数字：</p>
+<ul>
+<li>读权限（r）对应数字4</li>
+<li>写权限（w）对应数字2</li>
+<li>执行权限（x）对应数字1</li>
+</ul>
+<pre><code class="language-bash"># 数字表示法
+chmod 755 filename  # rwxr-xr-x
+chmod 644 filename  # rw-r--r--
+</code></pre>
+<h2 id="section-16">查看文件权限</h2>
+<pre><code class="language-bash"># 查看文件详细信息
+ls -l filename
+
+# 查看目录详细信息
+ls -ld directoryname
+
+# 查看隐藏文件
+ls -la
+</code></pre>
+<h1 id="section-17">5. 修改文件权限</h1>
+<h2 id="chmod">使用chmod命令</h2>
+<pre><code class="language-bash"># 使用符号法修改权限
+chmod u+r filename      # 给所有者添加读权限
+chmod g-w filename      # 从组用户移除写权限
+chmod o+x filename      # 给其他用户添加执行权限
+chmod a+r filename      # 给所有用户添加读权限
+
+# 使用数字法修改权限
+chmod 755 filename      # rwxr-xr-x
+chmod 644 filename      # rw-r--r--
+chmod 777 filename      # rwxrwxrwx
+
+# 递归修改目录权限（文件夹下的所有文件和子目录都会被修改）
+chmod -R 755 directory
+</code></pre>
+<h2 id="chown">使用chown命令修改所有者</h2>
+<pre><code class="language-bash"># 修改文件所有者
+sudo chown username filename
+
+# 修改文件所有者和组
+sudo chown username:groupname filename
+
+# 递归修改目录所有者
+sudo chown -R username:groupname directory
+</code></pre>
+<h1 id="sudo">6. sudo权限管理</h1>
+<h2 id="sudo-1">什么是sudo</h2>
+<ul>
+<li><strong>sudo</strong>：以超级用户权限执行命令的安全方式</li>
+<li><strong>优势</strong>：记录命令执行、不需要知道root密码、可以精细控制权限</li>
+</ul>
+<h2 id="sudo-2">配置sudo权限</h2>
+<pre><code class="language-bash"># 编辑sudoers文件（推荐使用visudo,通过锁定文件机制防止多个用户同时编辑 /etc/sudoers）
+sudo visudo
+</code></pre>
+<p>sudoers的基本语法如下：</p>
+<pre><code class="language-bash">song ALL=(ALL) ALL
+</code></pre>
+<p>用户/组 主机=(目标用户:目标组) 命令</p>
+
+
+                                        </div>
+                                <div class="col-lg-2 p-md-0 m-md-0 bg-body">
+                                    <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
+        <div class=" mb-3 sidebar-root">
+            <div class="sidebar-nav-item sidebar-header">On This Page</div>
+            <div class="sidebar-nav-children">
+                    <div class="sidebar-nav-item"><a href="#linux">Linux&#x7528;&#x6237;&#x548C;&#x6743;&#x9650;&#x7BA1;&#x7406;</a></div>
+                    <div class="sidebar-nav-item"><a href="#section">1. &#x7528;&#x6237;&#x8D26;&#x6237;&#x57FA;&#x7840;&#x6982;&#x5FF5;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-1">&#x4EC0;&#x4E48;&#x662F;&#x7528;&#x6237;&#x8D26;&#x6237;</a></div>
+                                <div class="sidebar-nav-item"><a href="#iduididgid">&#x7528;&#x6237;ID&#xFF08;UID&#xFF09;&#x548C;&#x7EC4;ID&#xFF08;GID&#xFF09;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-2">2. &#x7528;&#x6237;&#x7BA1;&#x7406;&#x547D;&#x4EE4;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-3">&#x67E5;&#x770B;&#x7528;&#x6237;&#x4FE1;&#x606F;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-4">&#x6DFB;&#x52A0;&#x7528;&#x6237;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-5">&#x5207;&#x6362;&#x7528;&#x6237;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-6">&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x5BC6;&#x7801;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-7">&#x4FEE;&#x6539;&#x7528;&#x6237;&#x4FE1;&#x606F;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-8">&#x5220;&#x9664;&#x7528;&#x6237;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-9">3. &#x7528;&#x6237;&#x7EC4;&#x7BA1;&#x7406;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-10">&#x67E5;&#x770B;&#x7EC4;&#x4FE1;&#x606F;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-11">&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x7EC4;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-12">&#x7BA1;&#x7406;&#x7EC4;&#x6210;&#x5458;</a></div>
+                                <div class="sidebar-nav-item"><a href="#vs">&#x521D;&#x59CB;&#x7EC4; vs. &#x9644;&#x52A0;&#x7EC4;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-13">4. &#x6587;&#x4EF6;&#x6743;&#x9650;&#x57FA;&#x7840;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-14">&#x6743;&#x9650;&#x7C7B;&#x578B;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-15">&#x6743;&#x9650;&#x8868;&#x793A;&#x65B9;&#x6CD5;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-16">&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x6743;&#x9650;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-17">5. &#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x6743;&#x9650;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#chmod">&#x4F7F;&#x7528;chmod&#x547D;&#x4EE4;</a></div>
+                                <div class="sidebar-nav-item"><a href="#chown">&#x4F7F;&#x7528;chown&#x547D;&#x4EE4;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x8005;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#sudo">6. sudo&#x6743;&#x9650;&#x7BA1;&#x7406;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#sudo-1">&#x4EC0;&#x4E48;&#x662F;sudo</a></div>
+                                <div class="sidebar-nav-item"><a href="#sudo-2">&#x914D;&#x7F6E;sudo&#x6743;&#x9650;</a></div>
+                        </div>
+            </div>
+        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+    <div class="offset-lg-2 col-12 col-lg-8">
+        <div class="pt-2 font-size-sm text-muted text-center">
+            Generated By <a class="text-muted" href="https://statiq.dev">Statiq</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+
+                // Bootstrap tooltips
+                $('[data-toggle="tooltip"]').tooltip();
+
+				// Keeps the sidebars in view on wider viewports
+				let left = null;
+				let leftParent = null;
+				let right = null;
+				let rightParent = null;
+                function stickSidebars()
+				{
+				    if (left == null) {
+                        left = $('#left-sidebar');
+                        right = $('#right-sidebar');
+                    }
+                    if (left.length) {
+                        if (window.innerWidth >= 768) {
+                            if (leftParent == null) {
+                                leftParent = left.parent()[0];
+                            }
+                            if (leftParent) {
+                                let leftRect = leftParent.getBoundingClientRect();
+                                stickSidebar(left,  leftRect);
+                            }
+                        } else {
+                            left.css('position', 'relative');
+                            if (left.css('bottom') != 0) {
+                                left.css('bottom', '0');
+                            }
+                        }
+                    }
+                    if (right.length) {
+                        if (window.innerWidth >= 768) {
+                            if (rightParent == null) {
+                                rightParent = right.parent()[0];
+                            }
+                            if (rightParent) {
+                                let rightRect = rightParent.getBoundingClientRect();
+                                stickSidebar(right,  rightRect);
+                            }
+                        } else {
+                            right.css('position', 'relative');
+                            if (right.css('bottom') != 0) {
+                                right.css('bottom', '0');
+                            }
+                        }
+                    }
+				}
+				function stickSidebar(sidebar, rect) {
+                    // Bottom
+                    if (rect.bottom > window.innerHeight) {
+                        sidebar.css('bottom', rect.bottom - window.innerHeight + "px");
+                    } else {
+                        sidebar.css('bottom', 0);
+                    }
+                    // Top
+                    if (rect.top < 0) {
+                        sidebar.css('position', 'sticky');
+                    } else {
+                        sidebar.css('position', 'absolute');
+                    }
+				}
+				$(window).on("load", function() {
+				    stickSidebars();
+				});
+                $(window).scroll(function() {
+				    stickSidebars();
+				});
+				$(window).resize(function() {
+				    stickSidebars();
+				})
+
+                // Mermaid diagrams
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+
+        
+
+        
+    </body>
+</html>

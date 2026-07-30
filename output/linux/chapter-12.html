@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" data-no-mirror>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css">
+        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+	    
+        <!-- Lunr search -->
+
+        
+
+        
+
+        <title>Documentation - Shell&#x7F16;&#x7A0B;</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+    <a class="navbar-brand" href="/">
+                <span class="text-primary">Documentation</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+        <ul class="navbar-nav mr-auto">
+            
+        </ul>
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+            <a class="nav-link" href="/linux">&#x5168;&#x90E8;&#x7AE0;&#x8282;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/other">&#x8DA3;&#x5473;&#x9879;&#x76EE;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/exercises">&#x8BFE;&#x5802;&#x7EC3;&#x4E60;</a>
+        </li>
+
+            
+        </ul>
+    </div>
+</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Titlebar -->
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex flex-wrap align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
+
+        <span><a href="/linux">&#x7AE0;&#x8282;&#x5BFC;&#x822A;</a></span>
+                                        </div>
+                                        <div class="text-white m-0 text-break title">
+
+Shell&#x7F16;&#x7A0B;
+                                        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Under title -->
+                    <div id="undertitle">
+                        <div class="container-xl">
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Body -->
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 p-md-0 m-md-0 bg-body">
+                                            <div id="left-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+
+<div class="sidebar-root">
+
+<div class="sidebar-nav-item">
+    <a href="/linux">&#x7AE0;&#x8282;&#x5BFC;&#x822A;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-01">Linux&#x754C;&#x9762;&#x3001;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x548C;&#x57FA;&#x672C;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-02">WSL&#x4E0B;Ubuntu&#x7684;&#x5B89;&#x88C5;&#x4E0E;&#x914D;&#x7F6E;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-03">vim&#x7F16;&#x8F91;&#x5668;&#x7684;&#x4F7F;&#x7528;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-04">Linux&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-05">Linux&#x7528;&#x6237;&#x548C;&#x6743;&#x9650;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-06">Linux&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-07">Shell&#x57FA;&#x7840;&#x77E5;&#x8BC6;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-08">Linux&#x7CFB;&#x7EDF;&#x76D1;&#x63A7;&#x548C;&#x6027;&#x80FD;&#x4F18;&#x5316;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-09">Linux&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-10">Linux&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x548C;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-11">Linux&#x78C1;&#x76D8;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/linux/chapter-12">Shell&#x7F16;&#x7A0B;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-13">SSH&#x8FDC;&#x7A0B;&#x5F00;&#x53D1;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/linux/chapter-14">&#x547D;&#x4EE4;&#x884C;AI Agent&#x5F00;&#x53D1;&#x5DE5;&#x5177;</a>
+</div></div>                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+<h1 id="shell">Shell编程</h1>
+<h1 id="shell-1">1. Shell概述</h1>
+<h2 id="shell-2">什么是Shell</h2>
+<p>Shell是一个命令解释器，它接收用户输入的命令并将其传递给Linux内核执行。同时，Shell也是一种编程语言，可以编写Shell脚本来自动化任务。</p>
+<h2 id="shell-3">常见Shell类型</h2>
+<ul>
+<li><strong>bash</strong>：Bourne Again Shell，Linux默认Shell</li>
+<li><strong>sh</strong>：Bourne Shell，最原始的Shell</li>
+<li><strong>csh</strong>：C Shell，语法类似C语言</li>
+<li><strong>ksh</strong>：Korn Shell，兼容bash和sh</li>
+<li><strong>zsh</strong>：Z Shell，功能最强大的Shell</li>
+</ul>
+<h2 id="shell-4">查看当前Shell</h2>
+<pre><code class="language-bash"># 查看当前使用的Shell
+echo $SHELL
+
+# 查看系统所有可用Shell
+cat /etc/shells
+
+# 查看当前Shell版本
+bash --version
+</code></pre>
+<h2 id="shell-5">Shell脚本基础</h2>
+<pre><code class="language-bash">#!/bin/bash
+# 第一行称为shebang(释伴)，指定脚本解释器
+# 以#开头的行为注释
+
+echo &quot;Hello, World!&quot;
+</code></pre>
+<h1 id="shell-6">2. Shell变量</h1>
+<h2 id="section">变量定义</h2>
+<pre><code class="language-bash"># 定义变量（等号两边不能有空格）
+name=&quot;John&quot;
+age=25
+
+# 使用变量（加$符号）
+echo $name
+echo ${name}
+
+
+## 特殊变量
+
+```bash
+$0      # 脚本名称
+$1-$9   # 第1-9个参数
+$#      # 参数个数
+$&#64;      # 所有参数
+</code></pre>
+<h2 id="section-1">环境变量</h2>
+<pre><code class="language-bash"># 设置环境变量
+export PATH=$PATH:/new/path
+export MY_VAR=&quot;value&quot;
+
+# 查看环境变量
+env
+
+# 常用环境变量
+echo $HOME      # 用户主目录
+echo $USER      # 当前用户
+echo $PWD       # 当前工作目录
+echo $PATH      # 命令搜索路径
+</code></pre>
+<h1 id="section-2">3. 运算符</h1>
+<h2 id="section-3">算术运算符</h2>
+<pre><code class="language-bash">a=10
+b=20
+
+# 使用$(())（推荐）
+val=$((a + b))
+
+# 运算符：+ - * / % = == !=
+</code></pre>
+<h2 id="section-4">关系运算符</h2>
+<pre><code class="language-bash">a=10
+b=20
+
+# 使用[]
+if [ $a -eq $b ]
+then
+   echo &quot;相等&quot;
+fi
+
+# 运算符：
+# -eq 等于
+# -ne 不等于
+# -gt 大于
+# -lt 小于
+# -ge 大于等于
+# -le 小于等于
+</code></pre>
+<h2 id="section-5">布尔运算符</h2>
+<pre><code class="language-bash">a=10
+b=20
+
+# 逻辑与
+if [ $a -lt 100 ] &amp;&amp; [ $b -gt 10 ]
+then
+   echo &quot;条件成立&quot;
+fi
+
+# 逻辑或
+if [ $a -lt 100 ] || [ $b -lt 10 ]
+then
+   echo &quot;至少一个条件成立&quot;
+fi
+
+# 逻辑非
+if [ ! $a -eq $b ]
+then
+   echo &quot;不相等&quot;
+fi
+</code></pre>
+<h2 id="section-6">字符串运算符</h2>
+<pre><code class="language-bash">a=&quot;hello&quot;
+b=&quot;world&quot;
+
+# 字符串连接
+c=$a$b
+
+# 字符串长度
+len=${#a}
+
+# 运算符：
+# =   相等
+# !=  不相等
+# -z  字符串长度为0
+# -n  字符串长度不为0
+# $   字符串不为空
+</code></pre>
+<h2 id="section-7">文件测试运算符</h2>
+<pre><code class="language-bash">file=&quot;/path/to/file&quot;
+
+# 文件测试
+[ -e $file ]    # 文件存在
+[ -f $file ]    # 是普通文件
+[ -d $file ]    # 是目录
+[ -r $file ]    # 可读
+[ -w $file ]    # 可写
+[ -x $file ]    # 可执行
+[ -s $file ]    # 文件不为空
+[ -L $file ]    # 是符号链接
+</code></pre>
+<h1 id="section-8">4. 流程控制</h1>
+<h2 id="if">if条件语句</h2>
+<pre><code class="language-bash"># 基本if语句
+if [ 条件 ]
+then
+   命令
+fi
+
+# if-else语句
+if [ 条件 ]
+then
+   命令1
+else
+   命令2
+fi
+
+# if-elif-else语句
+if [ 条件1 ]
+then
+   命令1
+elif [ 条件2 ]
+then
+   命令2
+else
+   命令3
+fi
+
+# 示例
+score=85
+if [ $score -ge 90 ]
+then
+   echo &quot;优秀&quot;
+elif [ $score -ge 80 ]
+then
+   echo &quot;良好&quot;
+elif [ $score -ge 60 ]
+then
+   echo &quot;及格&quot;
+else
+   echo &quot;不及格&quot;
+fi
+</code></pre>
+<h2 id="for">for循环</h2>
+<pre><code class="language-bash"># 基本for循环
+for var in item1 item2 item3
+do
+   echo &quot;当前值: $var&quot;
+done
+
+# 使用范围
+for i in {1..5}
+do
+   echo &quot;数字: $i&quot;
+done
+
+# C风格for循环
+for ((i=0; i&lt;5; i++))
+do
+   echo &quot;计数: $i&quot;
+done
+
+# 遍历文件
+for file in *.txt
+do
+   echo &quot;文件: $file&quot;
+done
+</code></pre>
+<h2 id="while">while循环</h2>
+<pre><code class="language-bash"># 基本while循环
+count=1
+while [ $count -le 5 ]
+do
+   echo &quot;计数: $count&quot;
+   count=$((count + 1))
+done
+
+# 读取文件
+while read line
+do
+   echo &quot;行内容: $line&quot;
+done &lt; file.txt
+
+# 无限循环
+while true
+do
+   echo &quot;按Ctrl+C退出&quot;
+   sleep 1
+done
+</code></pre>
+<h2 id="breakcontinue">break和continue</h2>
+<pre><code class="language-bash"># break - 跳出循环
+for i in {1..10}
+do
+   if [ $i -eq 5 ]
+   then
+      break
+   fi
+   echo &quot;数字: $i&quot;
+done
+
+# continue - 跳过本次循环
+for i in {1..10}
+do
+   if [ $((i % 2)) -eq 0 ]
+   then
+      continue
+   fi
+   echo &quot;奇数: $i&quot;
+done
+</code></pre>
+<h1 id="section-9">5. 数组</h1>
+<h2 id="section-10">数组定义</h2>
+<pre><code class="language-bash"># 定义数组
+arr=(value1 value2 value3)
+
+# 或逐个赋值
+arr[0]=&quot;first&quot;
+arr[1]=&quot;second&quot;
+arr[2]=&quot;third&quot;
+
+
+## 数组操作
+
+```bash
+arr=(apple banana cherry date)
+
+# 访问元素
+echo ${arr[0]}        # apple
+echo ${arr[&#64;]}        # 所有元素
+echo ${arr[*]}        # 所有元素
+
+# 修改元素
+arr[0]=&quot;apricot&quot;
+
+# 删除元素
+unset arr[2]
+
+# 添加元素
+arr+=(elderberry)
+</code></pre>
+<h2 id="section-11">数组遍历</h2>
+<pre><code class="language-bash">arr=(one two three four five)
+
+# 遍历所有元素
+for item in ${arr[&#64;]}
+do
+   echo &quot;元素: $item&quot;
+done
+</code></pre>
+<h1 id="section-12">6. 字符串处理</h1>
+<h2 id="section-13">字符串截取</h2>
+<pre><code class="language-bash">str=&quot;Hello, World!&quot;
+
+# 提取子字符串
+echo ${str:0:5}     # Hello
+echo ${str:7}       # World!
+
+# 从右边截取
+echo ${str: -6}     # World!（注意空格）
+</code></pre>
+<h1 id="section-14">7. 输入输出</h1>
+<h2 id="section-15">读取输入</h2>
+<pre><code class="language-bash"># 基本读取
+echo &quot;请输入姓名:&quot;
+read name
+echo &quot;你好, $name&quot;
+
+# 读取多个变量
+echo &quot;请输入姓名和年龄:&quot;
+read name age
+echo &quot;$name 今年 $age 岁&quot;
+
+# 读取一行到数组
+echo &quot;请输入多个值:&quot;
+read -a arr
+echo &quot;第一个值: ${arr[0]}&quot;
+
+# 不显示输入（密码）
+echo &quot;请输入密码:&quot;
+read -s password
+echo &quot;密码已接收&quot;
+
+# 设置超时
+echo &quot;请在5秒内输入:&quot;
+read -t 5 input
+</code></pre>
+<h2 id="section-16">输出重定向</h2>
+<pre><code class="language-bash"># 标准输出重定向
+echo &quot;Hello&quot; &gt; file.txt      # 覆盖
+echo &quot;World&quot; &gt;&gt; file.txt     # 追加
+
+# 标准错误重定向
+command 2&gt; error.log
+command 2&gt;&gt; error.log
+
+# 同时重定向标准和错误
+command &gt; output.log 2&gt;&amp;1
+command &amp;&gt; output.log
+
+# 丢弃输出
+command &gt; /dev/null 2&gt;&amp;1
+</code></pre>
+<h1 id="section-17">8. 实践练习</h1>
+<h2 id="section-18">练习1：计算器脚本</h2>
+<pre><code class="language-bash">#!/bin/bash
+# calculator.sh - 简单计算器
+
+echo &quot;简单计算器&quot;
+echo &quot;1. 加法&quot;
+echo &quot;2. 减法&quot;
+echo &quot;3. 乘法&quot;
+echo &quot;4. 除法&quot;
+
+read -p &quot;请选择运算 (1-4): &quot; choice
+read -p &quot;请输入第一个数: &quot; num1
+read -p &quot;请输入第二个数: &quot; num2
+
+case $choice in
+   1)
+      result=$((num1 + num2))
+      echo &quot;$num1 + $num2 = $result&quot;
+      ;;
+   2)
+      result=$((num1 - num2))
+      echo &quot;$num1 - $num2 = $result&quot;
+      ;;
+   3)
+      result=$((num1 * num2))
+      echo &quot;$num1 * $num2 = $result&quot;
+      ;;
+   4)
+      if [ $num2 -eq 0 ]
+      then
+         echo &quot;错误: 除数不能为0&quot;
+      else
+         result=$((num1 / num2))
+         echo &quot;$num1 / $num2 = $result&quot;
+      fi
+      ;;
+   *)
+      echo &quot;无效选择&quot;
+      ;;
+esac
+</code></pre>
+<h2 id="section-19">练习2：文件备份脚本</h2>
+<pre><code class="language-bash">#!/bin/bash
+# backup.sh - 文件备份脚本
+
+SOURCE_DIR=&quot;/path/to/source&quot;
+BACKUP_DIR=&quot;/path/to/backup&quot;
+DATE=$(date +%Y%m%d_%H%M%S)
+BACKUP_NAME=&quot;backup_$DATE.tar.gz&quot;
+
+# 检查源目录是否存在
+if [ ! -d &quot;$SOURCE_DIR&quot; ]
+then
+   echo &quot;错误: 源目录不存在&quot;
+   exit 1
+fi
+
+# 创建备份目录
+mkdir -p $BACKUP_DIR
+
+# 创建备份
+tar -czf $BACKUP_DIR/$BACKUP_NAME $SOURCE_DIR
+
+if [ $? -eq 0 ]
+then
+   echo &quot;备份成功: $BACKUP_DIR/$BACKUP_NAME&quot;
+else
+   echo &quot;备份失败&quot;
+   exit 1
+fi
+
+# 删除7天前的备份
+find $BACKUP_DIR -name &quot;backup_*.tar.gz&quot; -mtime +7 -delete
+echo &quot;已清理7天前的备份&quot;
+</code></pre>
+<h2 id="section-20">练习3：系统信息收集脚本</h2>
+<pre><code class="language-bash">#!/bin/bash
+# sysinfo.sh - 系统信息收集
+
+echo &quot;========== 系统信息 ==========&quot;
+
+echo &quot;主机名: $(hostname)&quot;
+echo &quot;操作系统: $(uname -s)&quot;
+echo &quot;内核版本: $(uname -r)&quot;
+echo &quot;运行时间: $(uptime)&quot;
+echo &quot;&quot;
+
+echo &quot;========== CPU信息 ==========&quot;
+echo &quot;CPU型号: $(grep 'model name' /proc/cpuinfo | head -1 | cut -d: -f2)&quot;
+echo &quot;CPU核心数: $(nproc)&quot;
+echo &quot;&quot;
+
+echo &quot;========== 内存信息 ==========&quot;
+free -h
+echo &quot;&quot;
+
+echo &quot;========== 磁盘信息 ==========&quot;
+df -h
+echo &quot;&quot;
+
+echo &quot;========== 网络信息 ==========&quot;
+ip addr show | grep &quot;inet &quot;
+</code></pre>
+<h1 id="section-21">9. 练习题</h1>
+<h2 id="section-22">1. 基础练习</h2>
+<ol>
+<li>编写一个脚本，判断一个数是否为偶数</li>
+<li>编写一个脚本，计算1到100的和</li>
+<li>编写一个脚本，打印99乘法表</li>
+<li>编写一个脚本，判断一个年份是否为闰年</li>
+</ol>
+<h2 id="section-23">2. 进阶练习</h2>
+<ol>
+<li>编写一个脚本，批量创建用户（从文件读取用户名列表）</li>
+<li>编写一个脚本，监控系统资源使用率（CPU、内存、磁盘）</li>
+<li>编写一个脚本，自动备份指定目录并发送到远程服务器</li>
+<li>编写一个脚本，检查网站是否可访问并发送警报</li>
+</ol>
+<p>通过本章学习，你应该能够：</p>
+<ol>
+<li>理解Shell编程的基本概念和语法</li>
+<li>掌握变量、运算符和流程控制的使用</li>
+<li>熟练编写函数和数组操作</li>
+<li>学会字符串处理和输入输出重定向</li>
+<li>能够编写实用的Shell脚本来自动化日常任务</li>
+</ol>
+
+
+                                        </div>
+                                <div class="col-lg-2 p-md-0 m-md-0 bg-body">
+                                    <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
+        <div class=" mb-3 sidebar-root">
+            <div class="sidebar-nav-item sidebar-header">On This Page</div>
+            <div class="sidebar-nav-children">
+                    <div class="sidebar-nav-item"><a href="#shell">Shell&#x7F16;&#x7A0B;</a></div>
+                    <div class="sidebar-nav-item"><a href="#shell-1">1. Shell&#x6982;&#x8FF0;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#shell-2">&#x4EC0;&#x4E48;&#x662F;Shell</a></div>
+                                <div class="sidebar-nav-item"><a href="#shell-3">&#x5E38;&#x89C1;Shell&#x7C7B;&#x578B;</a></div>
+                                <div class="sidebar-nav-item"><a href="#shell-4">&#x67E5;&#x770B;&#x5F53;&#x524D;Shell</a></div>
+                                <div class="sidebar-nav-item"><a href="#shell-5">Shell&#x811A;&#x672C;&#x57FA;&#x7840;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#shell-6">2. Shell&#x53D8;&#x91CF;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section">&#x53D8;&#x91CF;&#x5B9A;&#x4E49;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-1">&#x73AF;&#x5883;&#x53D8;&#x91CF;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-2">3. &#x8FD0;&#x7B97;&#x7B26;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-3">&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-4">&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-5">&#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x7B26;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-6">&#x5B57;&#x7B26;&#x4E32;&#x8FD0;&#x7B97;&#x7B26;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-7">&#x6587;&#x4EF6;&#x6D4B;&#x8BD5;&#x8FD0;&#x7B97;&#x7B26;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-8">4. &#x6D41;&#x7A0B;&#x63A7;&#x5236;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#if">if&#x6761;&#x4EF6;&#x8BED;&#x53E5;</a></div>
+                                <div class="sidebar-nav-item"><a href="#for">for&#x5FAA;&#x73AF;</a></div>
+                                <div class="sidebar-nav-item"><a href="#while">while&#x5FAA;&#x73AF;</a></div>
+                                <div class="sidebar-nav-item"><a href="#breakcontinue">break&#x548C;continue</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-9">5. &#x6570;&#x7EC4;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-10">&#x6570;&#x7EC4;&#x5B9A;&#x4E49;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-11">&#x6570;&#x7EC4;&#x904D;&#x5386;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-12">6. &#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-13">&#x5B57;&#x7B26;&#x4E32;&#x622A;&#x53D6;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-14">7. &#x8F93;&#x5165;&#x8F93;&#x51FA;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-15">&#x8BFB;&#x53D6;&#x8F93;&#x5165;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-16">&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-17">8. &#x5B9E;&#x8DF5;&#x7EC3;&#x4E60;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-18">&#x7EC3;&#x4E60;1&#xFF1A;&#x8BA1;&#x7B97;&#x5668;&#x811A;&#x672C;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-19">&#x7EC3;&#x4E60;2&#xFF1A;&#x6587;&#x4EF6;&#x5907;&#x4EFD;&#x811A;&#x672C;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-20">&#x7EC3;&#x4E60;3&#xFF1A;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x6536;&#x96C6;&#x811A;&#x672C;</a></div>
+                        </div>
+                    <div class="sidebar-nav-item"><a href="#section-21">9. &#x7EC3;&#x4E60;&#x9898;</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section-22">1. &#x57FA;&#x7840;&#x7EC3;&#x4E60;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-23">2. &#x8FDB;&#x9636;&#x7EC3;&#x4E60;</a></div>
+                        </div>
+            </div>
+        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+    <div class="offset-lg-2 col-12 col-lg-8">
+        <div class="pt-2 font-size-sm text-muted text-center">
+            Generated By <a class="text-muted" href="https://statiq.dev">Statiq</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+
+                // Bootstrap tooltips
+                $('[data-toggle="tooltip"]').tooltip();
+
+				// Keeps the sidebars in view on wider viewports
+				let left = null;
+				let leftParent = null;
+				let right = null;
+				let rightParent = null;
+                function stickSidebars()
+				{
+				    if (left == null) {
+                        left = $('#left-sidebar');
+                        right = $('#right-sidebar');
+                    }
+                    if (left.length) {
+                        if (window.innerWidth >= 768) {
+                            if (leftParent == null) {
+                                leftParent = left.parent()[0];
+                            }
+                            if (leftParent) {
+                                let leftRect = leftParent.getBoundingClientRect();
+                                stickSidebar(left,  leftRect);
+                            }
+                        } else {
+                            left.css('position', 'relative');
+                            if (left.css('bottom') != 0) {
+                                left.css('bottom', '0');
+                            }
+                        }
+                    }
+                    if (right.length) {
+                        if (window.innerWidth >= 768) {
+                            if (rightParent == null) {
+                                rightParent = right.parent()[0];
+                            }
+                            if (rightParent) {
+                                let rightRect = rightParent.getBoundingClientRect();
+                                stickSidebar(right,  rightRect);
+                            }
+                        } else {
+                            right.css('position', 'relative');
+                            if (right.css('bottom') != 0) {
+                                right.css('bottom', '0');
+                            }
+                        }
+                    }
+				}
+				function stickSidebar(sidebar, rect) {
+                    // Bottom
+                    if (rect.bottom > window.innerHeight) {
+                        sidebar.css('bottom', rect.bottom - window.innerHeight + "px");
+                    } else {
+                        sidebar.css('bottom', 0);
+                    }
+                    // Top
+                    if (rect.top < 0) {
+                        sidebar.css('position', 'sticky');
+                    } else {
+                        sidebar.css('position', 'absolute');
+                    }
+				}
+				$(window).on("load", function() {
+				    stickSidebars();
+				});
+                $(window).scroll(function() {
+				    stickSidebars();
+				});
+				$(window).resize(function() {
+				    stickSidebars();
+				})
+
+                // Mermaid diagrams
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+
+        
+
+        
+    </body>
+</html>

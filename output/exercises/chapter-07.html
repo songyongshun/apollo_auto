@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" data-no-mirror>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/themes/prism.css">
+        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.26.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror></script>
+        <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+	    
+        <!-- Lunr search -->
+
+        
+
+        
+
+        <title>Documentation - Shell&#x57FA;&#x7840;&#x77E5;&#x8BC6;</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+    <a class="navbar-brand" href="/">
+                <span class="text-primary">Documentation</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+        <ul class="navbar-nav mr-auto">
+            
+        </ul>
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+            <a class="nav-link" href="/linux">&#x5168;&#x90E8;&#x7AE0;&#x8282;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/other">&#x8DA3;&#x5473;&#x9879;&#x76EE;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/exercises">&#x8BFE;&#x5802;&#x7EC3;&#x4E60;</a>
+        </li>
+
+            
+        </ul>
+    </div>
+</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Titlebar -->
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex flex-wrap align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs d-flex flex-column flex-md-row text-break">
+
+        <span><a href="/exercises">&#x7AE0;&#x8282;</a></span>
+                                        </div>
+                                        <div class="text-white m-0 text-break title">
+
+Shell&#x57FA;&#x7840;&#x77E5;&#x8BC6;
+                                        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Under title -->
+                    <div id="undertitle">
+                        <div class="container-xl">
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Body -->
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 p-md-0 m-md-0 bg-body">
+                                            <div id="left-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+
+<div class="sidebar-root">
+
+<div class="sidebar-nav-item">
+    <a href="/exercises">&#x8BFE;&#x5802;&#x7EC3;&#x4E60;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/exercises/chapter-04">Linux&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/exercises/chapter-05">Linux&#x7528;&#x6237;&#x548C;&#x6743;&#x9650;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/exercises/chapter-06">Linux&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;</a>
+</div>
+<div class="sidebar-nav-item active">
+    <a href="/exercises/chapter-07">Shell&#x57FA;&#x7840;&#x77E5;&#x8BC6;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/exercises/chapter-09">Linux&#x7CFB;&#x7EDF;&#x76D1;&#x63A7;&#x4E0E;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</a>
+</div>
+<div class="sidebar-nav-item">
+    <a href="/exercises/chapter-10">Linux&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x548C;&#x7BA1;&#x7406;</a>
+</div></div>                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+<h1 id="shell-18">Shell 基础知识 - 上手操作练习题 (共18题)</h1>
+<blockquote>
+<p>基于 Chapter 07 知识点设计，所有题目均可在实际Linux系统上操作验证</p>
+</blockquote>
+<hr />
+<h2 id="section">🎯 真实场景背景</h2>
+<p>你刚入职某企业运维部门担任助理工程师，今天是你第一天上班，运维主管给你分配了一台测试用Linux服务器，要求你熟悉Shell环境并掌握基本操作技能，这是你未来所有运维工作的基础。</p>
+<p>所有练习都在这台测试服务器上完成，每一步操作都是实际工作中每天都会用到的技能，请认真练习并理解每个命令的工作原理。</p>
+<hr />
+<h2 id="section-1">✅ 练习说明</h2>
+<ul>
+<li>请按要求依次完成各练习。完成后在学习通内打开问卷填写并提交。</li>
+<li>本次练习不需要联网，所有操作都可以在本地服务器完成。</li>
+<li>可以使用普通用户账号执行大部分操作，需要管理员权限时使用sudo。</li>
+<li>注意观察每个命令的输出结果，不要只执行命令不看输出。</li>
+</ul>
+<hr />
+<h2 id="section-2">📋 基础操作篇 (第1-9题)</h2>
+<h3 id="section-3">第1题</h3>
+<p><strong>题目</strong>: 查看当前系统正在使用的Shell，然后查看系统中安装了哪些可用的Shell。</p>
+<h3 id="section-4">第2题</h3>
+<p><strong>题目</strong>: 分别尝试使用本章学到的所有快捷键，验证每个快捷键的功能。</p>
+<h3 id="section-5">第3题</h3>
+<p><strong>题目</strong>: 查看你的命令历史记录，找出你今天执行过的第2条命令并重新执行它。</p>
+<h3 id="section-6">第4题</h3>
+<p><strong>题目</strong>: 使用Ctrl+r快捷键搜索你之前执行过的包含 <code>ls</code> 的历史命令。</p>
+<h3 id="section-7">第5题</h3>
+<p><strong>题目</strong>: 查看当前系统所有的环境变量，找出PATH、HOME、USER这三个变量的值。</p>
+<h3 id="section-8">第6题</h3>
+<p><strong>题目</strong>: 创建一个名为 <code>MY_NAME</code> 的临时环境变量，值为你的姓名，然后验证这个变量是否设置成功。</p>
+<h3 id="section-9">第7题</h3>
+<p><strong>题目</strong>: 在家目录下创建临时目录 <code>testshell</code>，将这个目录添加到当前PATH变量的最前面，验证是否添加成功。</p>
+<h3 id="section-10">第8题</h3>
+<p><strong>题目</strong>: 查看你的家目录下所有以 <code>.bash</code> 开头的隐藏配置文件，列出这些文件的名称。</p>
+<h3 id="section-11">第9题</h3>
+<p><strong>题目</strong>: 在家目录下创建三个测试文件：<code>file1.txt</code>、<code>file2.log</code>、<code>file3.conf</code>，然后使用通配符分别列出：</p>
+<ul>
+<li>所有后缀为txt的文件</li>
+<li>所有名称以file开头的文件</li>
+<li>所有文件名长度为5个字符的文件</li>
+</ul>
+<hr />
+<h2 id="section-12">🚀 进阶操作篇 (第10-15题)</h2>
+<h3 id="section-13">第10题</h3>
+<p><strong>题目</strong>: 执行 <code>ls -la /etc</code> 命令，将输出结果保存到当前目录的 <code>etc_list.txt</code> 文件中。</p>
+<h3 id="section-14">第11题</h3>
+<p><strong>题目</strong>: 尝试执行一个不存在的命令 <code>notexistcmd</code>，将错误信息重定向保存到 <code>error.log</code> 文件中。</p>
+<h3 id="section-15">第12题</h3>
+<p><strong>题目</strong>: 使用管道命令统计 <code>/etc</code> 目录下一共有多少个文件和目录。</p>
+<h3 id="section-16">第13题</h3>
+<p><strong>题目</strong>: 查看当前系统所有运行的进程，使用管道过滤出所有包含 <code>bash</code> 的进程。</p>
+<h3 id="section-17">第14题</h3>
+<p><strong>题目</strong>: 使用命令替换功能，计算当前目录下的文件总数，然后用echo命令输出：&quot;当前目录共有 X 个文件&quot;。</p>
+<h3 id="section-18">第15题</h3>
+<p><strong>题目</strong>: 创建三个别名：</p>
+<ul>
+<li><code>ll</code> 代表 <code>ls -la</code></li>
+<li><code>..</code> 代表 <code>cd ..</code></li>
+<li><code>cls</code> 代表 <code>clear</code>
+然后验证这三个别名是否可以正常使用。</li>
+</ul>
+<hr />
+<h2 id="section-19">🏆 挑战操作篇 (第16-18题)</h2>
+<h3 id="section-20">第16题</h3>
+<p><strong>题目</strong>: 统计 <code>/var/log</code> 目录下所有<code>.log</code>文件的总行数，要求使用管道和wc命令完成。</p>
+<h3 id="section-21">第17题</h3>
+<p><strong>题目</strong>: 查找 <code>/usr/bin</code> 目录下所有大小超过5MB的可执行文件，按照文件大小从大到小排序，只显示前10个文件。</p>
+<h3 id="section-22">第18题</h3>
+<p><strong>题目</strong>: 编写一条命令，输出下面格式的系统信息：</p>
+<pre><code>当前用户: [用户名]
+当前目录: [当前路径]
+当前时间: [系统时间]
+运行进程数: [当前运行进程总数]
+</code></pre>
+<p>要求使用命令替换和echo命令实现。</p>
+<hr />
+<h2 id="section-23">💡 思考题</h2>
+<ol>
+<li>环境变量和普通Shell变量有什么区别？</li>
+<li>为什么将自定义目录添加到PATH变量后就可以直接执行该目录下的命令？</li>
+<li><code>&gt;</code> 和 <code>&gt;&gt;</code> 重定向符号有什么区别？使用不当会有什么风险？</li>
+<li>管道符号 <code>|</code> 是如何工作的？它为什么是Shell最强大的特性之一？</li>
+<li>别名和Shell脚本有什么区别？分别适合在什么场景下使用？</li>
+</ol>
+<hr />
+
+
+                                        </div>
+                                <div class="col-lg-2 p-md-0 m-md-0 bg-body">
+                                    <div id="right-sidebar" class="sidebar px-0 px-md-3 pt-3">
+        <div class=" mb-3 sidebar-root">
+            <div class="sidebar-nav-item sidebar-header">On This Page</div>
+            <div class="sidebar-nav-children">
+                    <div class="sidebar-nav-item"><a href="#shell-18">Shell &#x57FA;&#x7840;&#x77E5;&#x8BC6; - &#x4E0A;&#x624B;&#x64CD;&#x4F5C;&#x7EC3;&#x4E60;&#x9898; (&#x5171;18&#x9898;)</a></div>
+                        <div class="sidebar-nav-children">
+                                <div class="sidebar-nav-item"><a href="#section">&#x1F3AF; &#x771F;&#x5B9E;&#x573A;&#x666F;&#x80CC;&#x666F;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-1">&#x2705; &#x7EC3;&#x4E60;&#x8BF4;&#x660E;</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-2">&#x1F4CB; &#x57FA;&#x7840;&#x64CD;&#x4F5C;&#x7BC7; (&#x7B2C;1-9&#x9898;)</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-12">&#x1F680; &#x8FDB;&#x9636;&#x64CD;&#x4F5C;&#x7BC7; (&#x7B2C;10-15&#x9898;)</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-19">&#x1F3C6; &#x6311;&#x6218;&#x64CD;&#x4F5C;&#x7BC7; (&#x7B2C;16-18&#x9898;)</a></div>
+                                <div class="sidebar-nav-item"><a href="#section-23">&#x1F4A1; &#x601D;&#x8003;&#x9898;</a></div>
+                        </div>
+            </div>
+        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+    <div class="offset-lg-2 col-12 col-lg-8">
+        <div class="pt-2 font-size-sm text-muted text-center">
+            Generated By <a class="text-muted" href="https://statiq.dev">Statiq</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+
+                // Bootstrap tooltips
+                $('[data-toggle="tooltip"]').tooltip();
+
+				// Keeps the sidebars in view on wider viewports
+				let left = null;
+				let leftParent = null;
+				let right = null;
+				let rightParent = null;
+                function stickSidebars()
+				{
+				    if (left == null) {
+                        left = $('#left-sidebar');
+                        right = $('#right-sidebar');
+                    }
+                    if (left.length) {
+                        if (window.innerWidth >= 768) {
+                            if (leftParent == null) {
+                                leftParent = left.parent()[0];
+                            }
+                            if (leftParent) {
+                                let leftRect = leftParent.getBoundingClientRect();
+                                stickSidebar(left,  leftRect);
+                            }
+                        } else {
+                            left.css('position', 'relative');
+                            if (left.css('bottom') != 0) {
+                                left.css('bottom', '0');
+                            }
+                        }
+                    }
+                    if (right.length) {
+                        if (window.innerWidth >= 768) {
+                            if (rightParent == null) {
+                                rightParent = right.parent()[0];
+                            }
+                            if (rightParent) {
+                                let rightRect = rightParent.getBoundingClientRect();
+                                stickSidebar(right,  rightRect);
+                            }
+                        } else {
+                            right.css('position', 'relative');
+                            if (right.css('bottom') != 0) {
+                                right.css('bottom', '0');
+                            }
+                        }
+                    }
+				}
+				function stickSidebar(sidebar, rect) {
+                    // Bottom
+                    if (rect.bottom > window.innerHeight) {
+                        sidebar.css('bottom', rect.bottom - window.innerHeight + "px");
+                    } else {
+                        sidebar.css('bottom', 0);
+                    }
+                    // Top
+                    if (rect.top < 0) {
+                        sidebar.css('position', 'sticky');
+                    } else {
+                        sidebar.css('position', 'absolute');
+                    }
+				}
+				$(window).on("load", function() {
+				    stickSidebars();
+				});
+                $(window).scroll(function() {
+				    stickSidebars();
+				});
+				$(window).resize(function() {
+				    stickSidebars();
+				})
+
+                // Mermaid diagrams
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+
+        
+
+        
+    </body>
+</html>
